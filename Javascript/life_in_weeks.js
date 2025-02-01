@@ -28,13 +28,19 @@ function lifeInWeeks(age) {
     
 /************Don't change the code above************/    
     
-    //Write your code here.
+const AgeM = 90;
+const Days = 365;
+const Weeks = 52;
+const Months = 12;
     
+const YLeft = AgeM - age;
+const DLeft = YLeft * Days;
+const WLeft = YLeft * Weeks;
+const MLeft = YLeft * Months;
     
-    
-    
-    
-/*************Don't change the code below**********/
+console.log(`You have ${DLeft} days, ${WLeft} weeks, and ${MLeft} months left.`);
+
+/**********Don't change the code below**********/
 }
 
 lifeInWeeks(56)
