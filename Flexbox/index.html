@@ -11,15 +11,61 @@
     <style>
       body {
         font-family: "Sono", sans-serif;
+        justify-items: center;
+      
       }
 
-      /* Hint: What can you do with a media query and flexbox? */
+      /* Hint: What can you do with a media query and flexbox? i can adjust the content of my page depend the size of the windows*/
       @media (max-width: 1250px) {
+  
+    }
+     .pricing-container
+     {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      justify-items: center;
+
+     }
+      .pricing-container  > div{
+        background-color: #f1f1f1;
+        border: 0px solid black;
+        padding: 5px;
+        font-size: 15px;
+        text-align: center;
+        max-width: 300px;
+        margin: 20px;
       }
+     .plan-title {
+      font-weight: bold;
+      font-size: medium;
+     }
+     .plan-price{
+      font-weight: bold;
+      font-size:30px;
+     }
+     .plan-features  {
+      text-align: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 10px;
+
+     }
+     .plan-button
+     {
+      background-color: orange;
+      border: 0px;
+      font-size: 15px;
+      padding: 3px;
+      border-radius: 4px;
+     }
+    
     </style>
-  </head>
+   
+  </head>   
 
   <body>
+   
     <div class="pricing-container">
       <div class="pricing-plan">
         <div class="plan-title">Basic</div>
